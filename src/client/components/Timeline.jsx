@@ -53,7 +53,7 @@ class Timeline extends Component {
 
 
                                         <div className={TimelineStyle.readMore}>
-                                            <Link to={`/${work.id}`}> Read More</Link>
+                                            <Link to={`/work/${work.id}`}> Read More</Link>
 
                                         </div>
                                     </VerticalTimelineElement>

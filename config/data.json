@@ -52,9 +52,26 @@
     "projects": [
         {
             "name": "Moose",
-            "description": "",
+            "description": "A property management application helping landlords and tenants",
             "impact": "",
-            "keywords": []
+            "keywords": [
+                "reactJS",
+                "nodeJS",
+                "GraphQL",
+                "Postgres"
+            ],
+            "logo": ""
+        },
+        {
+            "name": "Albert",
+            "description": "A chatbot butler connecting condo residents to local businesses",
+            "impact": "",
+            "keywords": [
+                "meteorJS",
+                "ExpressJS",
+                "MongoDB"
+            ],
+            "logo": ""
         }
     ]
 }
