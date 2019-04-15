@@ -1,0 +1,60 @@
+{
+    "work": [
+        {
+            "id": "north19",
+            "company": "North (Formely Thalmic Labs)",
+            "dates": "Jan - Apr 2019",
+            "position": "Software Engineer Co-op",
+            "team": "Cloud Services",
+            "keywords": [
+                "NodeJS",
+                "OAuth2.0",
+                "Kubernetes",
+                "Micro-Service Architecture"
+            ],
+            "description": "",
+            "brief": "Building cloud authentication & platform for smart glasses",
+            "impact": "",
+            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1555280775/cloud-computing.svg"
+        },
+        {
+            "id": "intact18",
+            "company": "Intact Insurance",
+            "dates": "May - Aug 2018",
+            "position": "Data Lab Intern",
+            "team": "Data Lab R&D",
+            "brief": "Data modeling pipeline for home insurance risk prediction",
+            "keywords": [
+                "Docker",
+                "Python",
+                "R",
+                "Data Engineering"
+            ],
+            "description": "",
+            "impact": "",
+            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1555288804/folder.svg"
+        },
+        {
+            "id": "nuance17",
+            "company": "Nuance Communications",
+            "dates": "May - Aug 2017",
+            "position": "Software QA Intern",
+            "brief": "Hunting down bugs for natural language processing engines",
+            "keywords": [
+                "Automation Testing"
+            ],
+            "team": "Entreprise Division",
+            "description": "",
+            "impact": "",
+            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1555288926/chat.svg"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Moose",
+            "description": "",
+            "impact": "",
+            "keywords": []
+        }
+    ]
+}

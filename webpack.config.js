@@ -1,6 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
-
+const data = require('./config/data.json');
 
 module.exports = {
     entry: './src/client/index.js',
@@ -31,6 +31,14 @@ module.exports = {
                 use: ['@svgr/webpack'],
             },
             {
+                test: /\.scss$/,
+                use: [
+                    "style-loader", // creates style nodes from JS strings
+                    "css-loader", // translates CSS into CommonJS
+                    "sass-loader" // compiles Sass to CSS, using Node Sass by default
+                ]
+            },
+            {
                 test: /\.css$/,
                 loader: "style-loader!css-loader"
             },
@@ -58,6 +66,9 @@ module.exports = {
         port: 8030,
         open: true,
         compress: true
+    },
+    externals: {
+        'data': JSON.stringify(data)
     },
     plugins: [
         new HtmlWebPackPlugin({
