@@ -27,7 +27,7 @@ class Header extends Component {
                             Software Engineer & Experience Seeker
                             <br />
                             <br />
-                            <Button pill > Resume </Button>
+                            <Button pill href="https://drive.google.com/file/d/1CsGcQbhzSFI9opxw30pe6dJtCM3wvoKc/view?usp=sharing" > Resume </Button>
                             <Button pill outline theme="light" onClick={this.toggle}>
                                 Contact
                             </Button>

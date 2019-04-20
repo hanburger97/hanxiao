@@ -6,7 +6,6 @@
   "scripts": {
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot --display-error-details",
     "build": "webpack --mode production",
-    "start": "npm run build",
     "start:dev": "npm run client"
   },
   "author": "",

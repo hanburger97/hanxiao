@@ -9,7 +9,7 @@ class HomePage extends Component {
             <div>
                 <Header />
                 <Timeline />
-                <Projects />
+                {/* <Projects /> */}
             </div>
         )
     }
