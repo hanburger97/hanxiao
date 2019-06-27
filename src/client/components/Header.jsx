@@ -22,14 +22,14 @@ class Header extends Component {
                 <div className={HeaderStyle.headerContent}>
                     <Row>
                         <Col md={7} >
-                            <h1>Han Y. Xiao</h1>
+                            <h1>Han Xiao</h1>
                             <br />
-                            Software Engineer & Experience Seeker
+                            Aspriring software engineer & week-end pilot
                             <br />
                             <br />
-                            <Button pill href="https://drive.google.com/file/d/1CsGcQbhzSFI9opxw30pe6dJtCM3wvoKc/view?usp=sharing" > Resume </Button>
-                            <Button pill outline theme="light" onClick={this.toggle}>
-                                Contact
+                            {/* <Button pill href="https://drive.google.com/file/d/1CsGcQbhzSFI9opxw30pe6dJtCM3wvoKc/view?usp=sharing" > Resume </Button> */}
+                            <Button pill outline onClick={this.toggle}>
+                                Get in touch
                             </Button>
                             <Collapse open={this.state.collapse}>
                                 <div className="p-3 mt-2 rounded">

@@ -2,10 +2,10 @@
     "work": [
         {
             "id": "north19",
-            "company": "North (Formerly Thalmic Labs)",
+            "company": "North (formerly Thalmic Labs)",
             "company_info": "North builds the world's first consumer focused smart glasses that offers an intuitive experience.",
             "dates": "Jan - Apr 2019",
-            "position": "Software Engineer Co-op",
+            "position": "Software Engineering Intern",
             "team": "Cloud Services",
             "keywords": [
                 "NodeJS",
@@ -14,18 +14,18 @@
                 "Micro-Service Architecture"
             ],
             "description": "Responsible for back-end cloud services that powers the core user features on smart glasses. Provided critical framework that supported rapid development of new features during Product Market Fit.",
-            "brief": "Building cloud authentication & platform for smart glasses",
-            "impact": "Ship and deployed new cloud authentication scheme using OAuth2.0 standards; increase productivity by creating internal infrastructure and tools",
-            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1555280775/cloud-computing.svg"
+            "brief": "Built a cloud-based feature management platform for smart glasses & implemented OAuth authentication services",
+            "impact": "Product owner of a feature management platform for smart glasses, saving over thousands of dollars per year. Shipped and deployed new cloud authentication scheme using OAuth2.0 standards; increase productivity by creating internal infrastructure and tools",
+            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1561592777/readers.png"
         },
         {
             "id": "intact18",
             "company": "Intact Insurance",
             "company_info": "Intact insurance is one of the biggest insurance company in Canada, providing Canadians and business with auto and home insurances",
             "dates": "May - Aug 2018",
-            "position": "Data Lab Intern",
+            "position": "Data Engineering Intern",
             "team": "Data Lab R&D",
-            "brief": "Data modeling pipeline for home insurance risk prediction",
+            "brief": "Building data modeling pipeline & distributed infrastructure for data science",
             "keywords": [
                 "Docker Swarm",
                 "Python",
@@ -34,22 +34,24 @@
             ],
             "description": "Responsible for providing the data lab (Intact's core machine learning research lab) with a reliable, scalable and distributed software infrastructure and libraries using parallelization and Docker Swarm",
             "impact": "Designed and built a new distributed infrastructure for data science, enabling data scientists to run, train and analyze their models ~5 times faster with a more efficient resource sharing",
-            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1555288804/folder.svg"
+            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1561593325/illu_4x.png"
         },
         {
             "id": "nuance17",
             "company": "Nuance Communications",
-            "company_info": "",
+            "company_info": "Nuance provides speech recognition, and artificial intelligence. Current business products focus on server and embedded speech recognition, telephone call steering systems, automated telephone directory",
             "dates": "May - Aug 2017",
             "position": "Software QA Intern",
-            "brief": "Hunting down bugs for natural language processing engines",
+            "brief": "Human vs. Bugs battle royale; bug detection for natural language processing engines",
             "keywords": [
-                "Automation Testing"
+                "Testing",
+                "JMeter",
+                "Java"
             ],
             "team": "Entreprise Division",
             "description": "",
-            "impact": "",
-            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1555288926/chat.svg"
+            "impact": "Created test cases with over 95% test coverage on lines of code, branches and functions. Built a custom load testing framework and tool that reduced overheads from JMeter.",
+            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1561593572/artboard.png"
         }
     ],
     "projects": [
@@ -77,5 +79,8 @@
             ],
             "logo": ""
         }
-    ]
+    ],
+    "life_story": {
+        "intro": ""
+    }
 }
