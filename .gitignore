@@ -2,3 +2,5 @@
 .firebase/
 .firebaserc
 node_modules/
+dist/
+config/data.json
