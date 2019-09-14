@@ -26,33 +26,30 @@ class Timeline extends Component {
                                     >
                                         <h5 className={TimelineStyle.company}>{work.company}</h5>
                                         <Row>
+                                        <span>{work.brief}</span> 
+                                        </Row>
+                                        <Row className={TimelineStyle.imageRow}>
+                                            {work.svg ?
+                                                (
+                                                    <img src={work.svg} className={TimelineStyle.workImage} />
+                                                )
 
-
-                                            <Col md={12}>
-                                                <span>{work.brief}</span> <br /> <br />
-                                            </Col>
-                                            <Col md={6}>
+                                                : (
+                                                    <img src="" />
+                                                )
+                                            }
+                                        </Row>
+                                        <Row>
+                                            <Col md={10}>
                                                 {work.keywords.map((kw, e) => (
-                                                    <Badge outline theme="light" className={TimelineStyle.badge}>
+                                                    <Badge outline theme="primary" className={TimelineStyle.badge}>
                                                         {kw}
                                                     </Badge>
                                                 ))}
                                             </Col>
-                                            <Col md={6}>
-                                                {work.svg ?
-                                                    (
-                                                        <img src={work.svg} className={TimelineStyle.workImage} />
-                                                    )
-
-                                                    : (
-                                                        <img src="" />
-                                                    )
-                                                }
-
-                                            </Col>
-                                            <Col md={12}>
+                                            <Col md={2}>
                                                 <div className={TimelineStyle.readMore}>
-                                                    <Link to={`/work/${work.id}`}> Read More</Link>
+                                                    <Link to={`/work/${work.id}`}>More</Link>
 
                                                 </div>
                                             </Col>

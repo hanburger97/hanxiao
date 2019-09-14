@@ -19,30 +19,21 @@ class LifeStory extends Component {
                     <Col md={8}>
                     <h3>Life Story</h3>
                         <p>
-                        I was afraid of heights growing up, then I decided  that I wanted to conquer this 
-                        fear by flying a plane. By age 17, I obtained both my glider and private pilot licenses. 
-                        To say that it happened without a hitch and without tears, sweat and anxiety would be a 
-                        big lie. One thing I learned from becoming a pilot is that there are no such things as 
-                        "free lunches" in life. Everything requires sacrifice and effort, and, of course, 
-                        a bit of luck.
-
+                        At the age of 17, I conquered my fear of heights by obtaining both my glider and private pilot licenses. 
+                        By becoming a pilot, and by overcoming endless nights of anxiety, tears and sweat, I learned that the fear of failure 
+                        was my greatest opponent.
                         </p>
 
                         <p>
-                            When I was 18, I co-founded a non-for-profit organization that raises awareness for a heart disease affecting children.
-                            Through that roller-coaster experience, I learned that making an impact is easier said than done. And I learned that 
-                            after long nights of hard work, paperworks, heated discussions and compromises.
+                        When I was 18, I co-founded a non-for-profit organization that raises awareness for a heart disease affecting children.
+                        It turned out to be a failed venture, however, through long nights of heated discussions and compromises,
+                        I learned the value of making an impact and the hard work that goes with it.
                         </p>
 
                         <p>
-                        As I moved on to the next chapter of my life, 
-                        I now aspire to become a software engineer and currently study at the 
+                        Emboldened by my fearlessness to fail, I now aspire to become a software engineer and currently study at the 
                         University of Waterloo 🇨🇦. 
-                        I believe that my grit and relentlessness facing hard problems 
-                        will help me make a positive impact using technology. 
-                        Using the tools and experiences learned from my past experiences, 
-                        I am ready to put in the necessary effort and passion into conquering 
-                        whatever next that comes through my door. 
+                        I hope that my relentlessness to bow to failures will make me grow and become a better engineer.
                         <br />
 
 

@@ -20,7 +20,7 @@ class Header extends Component {
         return (
             <Collapse open={this.state.collapse}>
                 <div className="p-3 mt-2 rounded">
-                    <span>Here are the ways you can reach out to me</span>
+                    <span>Feel free to reach out!</span>
 
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.linkedin.com/in/hanburger/" target="_blank">
                         <FontAwesomeIcon icon={faLinkedin} color='grey' />
@@ -29,11 +29,6 @@ class Header extends Component {
                         <FontAwesomeIcon icon={faEnvelope} color='grey' />
 
                     </a>
-                    <a className="github mx-3 h4 d-inline-block text-secondary" href="https://github.com/hanburger97" target="_blank">
-                        <FontAwesomeIcon icon={faGithub} color='grey' />
-
-                    </a>
-
                     <a className="facebook mx-3 h4 d-inline-block text-secondary" href="https://www.facebook.com/hanburger97" target="_blank">
                         <FontAwesomeIcon icon={faFacebook} color='grey' />
 

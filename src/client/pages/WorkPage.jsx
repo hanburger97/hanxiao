@@ -36,7 +36,9 @@ class WorkPage extends Component {
                         </Row>
                         <Row>
                             <h3>{this.state.workData.company}</h3>
-                            <p>{this.state.workData.company_info}</p>
+                        </Row>
+                        <Row>
+                        <p>{this.state.workData.company_info}</p>
                         </Row>
                         <Row>
                             <Col md={3}>
