@@ -11,17 +11,13 @@ class LifeStory extends Component {
     render() {
         return (
             <div className={style.container}>
-                <div className={style.title}>
-                    <h3>Life Story</h3>
-                </div>
+                
 
 
                 <Row>
-                    <Col md={4}>
-                        <img className={style.spaceImg} src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1561591612/spaceman.png" alt="" />
-                    </Col>
+                    
                     <Col md={8}>
-
+                    <h3>Life Story</h3>
                         <p>
                         I was afraid of heights growing up, then I decided  that I wanted to conquer this 
                         fear by flying a plane. By age 17, I obtained both my glider and private pilot licenses. 
@@ -52,6 +48,9 @@ class LifeStory extends Component {
 
                         </p>
 
+                    </Col>
+                    <Col md={4}>
+                        <img className={style.spaceImg} src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1561591612/spaceman.png" alt="" />
                     </Col>
 
                 </Row>

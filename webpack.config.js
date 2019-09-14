@@ -3,7 +3,7 @@ const path = require('path');
 const data = require('./config/data.json');
 
 module.exports = {
-    entry: './src/client/index.js',
+    entry: ['babel-polyfill','./src/client/index.js'],
     module: {
         rules: [
             {

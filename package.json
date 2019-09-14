@@ -18,6 +18,7 @@
     "@svgr/webpack": "~4.1.0",
     "babel-eslint": "^9.0.0",
     "babel-loader": "~8.0.5",
+    "babel-preset-stage-0": "^6.24.1",
     "concurrently": "~4.1.0",
     "css-loader": "^2.1.1",
     "eslint": "^5.9.0",
@@ -44,6 +45,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@shopify/polaris": "^4.2.1",
     "axios": "~0.18.0",
+    "babel-polyfill": "^6.26.0",
     "body-parser": "~1.18.3",
     "bootstrap": "^4.3.1",
     "browser-cookies": "^1.2.0",
@@ -57,6 +59,7 @@
     "react-pose": "^4.0.8",
     "react-router": "~4.3.1",
     "react-router-dom": "~4.3.1",
+    "react-spring": "^8.0.27",
     "react-vertical-timeline-component": "^2.3.1",
     "sass-loader": "^7.1.0",
     "shards-react": "^1.0.3"
