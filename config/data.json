@@ -1,6 +1,22 @@
 {
     "work": [
         {
+            "id": "shopify19",
+            "company": "Shopify",
+            "company_info": "Shopify is the world's biggest ecommerce platform that empowers merchants and entrepreneurs to create online stores.",
+            "dates": "Sep - Dec 2019",
+            "position": "Software Engineering Intern",
+            "team": "Back-end Retail Core",
+            "keywords": [
+                "Ruby on Rails",
+                "Kubernetes"
+            ],
+            "description": "Responsible for back-end cloud services that powers the core user features on smart glasses. Provided critical framework that supported rapid development of new features during Product Market Fit.",
+            "brief": "Demoed and shipped ",
+            "impact": "Product owner of a feature management platform for smart glasses, saving over thousands of dollars per year. Shipped and deployed new cloud authentication scheme using OAuth2.0 standards; increase productivity by creating internal infrastructure and tools",
+            "svg": "https://res.cloudinary.com/dhrmym6ox/image/upload/v1561592777/readers.png"
+        },
+        {
             "id": "north19",
             "company": "North (formerly Thalmic Labs)",
             "company_info": "North builds the world's first consumer focused smart glasses that offers an intuitive experience.",
