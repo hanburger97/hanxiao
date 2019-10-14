@@ -60,8 +60,10 @@
     "react-router": "~4.3.1",
     "react-router-dom": "~4.3.1",
     "react-spring": "^8.0.27",
+    "react-three-fiber": "^3.0.2",
     "react-vertical-timeline-component": "^2.3.1",
     "sass-loader": "^7.1.0",
-    "shards-react": "^1.0.3"
+    "shards-react": "^1.0.3",
+    "three": "^0.109.0"
   }
 }

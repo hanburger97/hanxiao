@@ -5,6 +5,7 @@ import HomePage from './pages/Home.jsx';
 import WorkPage from './pages/WorkPage.jsx';
 import MotivationPage from './pages/MotivationPage.jsx';
 
+
 class App extends Component {
     render() {
         return (

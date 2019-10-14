@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import HeaderStyle from '../styles/Header.less';
 import { Button, Collapse } from "shards-react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faFacebook, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/fontawesome-free-solid'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faFacebook, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/fontawesome-free-solid';
+import { Canvas } from 'react-three-fiber';
+
+import Scene from './Scene.jsx';
+
+import Style from '../styles/Main.less';
+import HeaderStyle from '../styles/Header.less';
 
 class Header extends Component {
     constructor(props) {
@@ -49,7 +54,9 @@ class Header extends Component {
                 <div className={HeaderStyle.headerContent}>
                     <Row>
                         <Col md={3}>
-                            <img className={HeaderStyle.shard} src="public/img/planet_orbit.gif" />
+                            <Canvas className={HeaderStyle.shard} camera={{fov: 45, near: 1, far: 1000}} pixelRatio={window.devicePixelRatio}>
+                                <Scene />
+                            </Canvas>
                         </Col>
                         <Col md={5} >
                             <h1>Han Xiao</h1>
@@ -58,16 +65,23 @@ class Header extends Component {
                                 Aspriring software engineer interested in cloud development, computer networks and distributed computing.    
                             </p>  
                             
-                            <Button pill href="https://github.com/hanburger97" style={{margin: "5px"}}>
+                            <Button pill className={Style.Button} href="https://github.com/hanburger97">
                                 Github
                             </Button>
-                            <Button pill outline onClick={this.toggle}>
+                            <Button pill outline className={Style.ButtonSecondary} onClick={this.toggle}>
                                 Get in touch
                             </Button>
-                            {this.getContactMethods()}
+                            
                         </Col>
                         
                     </Row>
+                    <Row>
+                        <Col md={{size: 5, offset:3}} >
+                            {this.getContactMethods()}
+
+                        </Col>
+                    </Row>
+
                 </div>
                 <div className={HeaderStyle.diagonal}></div>
             </div>
