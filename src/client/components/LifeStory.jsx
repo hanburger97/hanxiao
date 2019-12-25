@@ -16,32 +16,32 @@ class LifeStory extends Component {
 
                 <Row>
                     
-                    <Col md={8}>
+                    <Col md={7}>
                     <h3>Life Story</h3>
                         <p>
-                        At the age of 17, I conquered my fear of heights by obtaining both my glider and private pilot licenses. 
-                        By becoming a pilot, and by overcoming endless nights of anxiety, tears and sweat, I learned that the fear of failure 
-                        was my greatest opponent.
+                        At the age of 17, I conquered my fear of heights by becoming a licensed glider and private pilot.
+                        Slowly, I have learned to conquer my fear of failure and overcome my anxiety. Flying through the sky has emboldened me to conquer 
+                        any challenge with a growth mindset.
                         </p>
 
-                        <p>
-                        When I was 18, I co-founded a non-for-profit organization that raises awareness for a heart disease affecting children.
-                        It turned out to be a failed venture, however, through long nights of heated discussions and compromises,
-                        I learned the value of making an impact and the hard work that goes with it.
-                        </p>
 
                         <p>
-                        Emboldened by my fearlessness to fail, I now aspire to become a software engineer and currently study at the 
-                        University of Waterloo 🇨🇦. 
-                        I hope that my relentlessness to bow to failures will make me grow and become a better engineer.
+                        I now aspire to become a software engineer and currently study at the <strong>University of Waterloo</strong>  🇨🇦. 
+                        <br/>
+                        During my internship at <strong>Shopify</strong>, I have worked on core back-end development in Ruby on Rails and Go. I have also worked on
+                        prototyping a new proxy SQL server for sharded databases. The latter really gave me an overview of distributed systems and databases and made me fall
+                        in love with the topics. 
+                        <br/>
+                        At <strong>North</strong>, formerly known as Thalmic Labs, I have worked on building a new role-based OAuth cloud authentication systems for smart glasses.
+                        I have also worked at <strong>Intact Insurance</strong> as a data engineer in the machine learning lab and at <strong>Nuance</strong> as a testing intern.
                         <br />
 
 
                         </p>
 
                     </Col>
-                    <Col md={4}>
-                        <img className={style.spaceImg} src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1561591612/spaceman.png" alt="" />
+                    <Col md={5}>
+                        <img className={style.spaceImg} src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1577305498/Image.png" alt="" />
                     </Col>
 
                 </Row>

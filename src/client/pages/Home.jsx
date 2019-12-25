@@ -10,8 +10,6 @@ class HomePage extends Component {
             <div>
                 <Header />
                 <LifeStory />
-                <Timeline />
-                {/* <Projects /> */}
             </div>
         )
     }

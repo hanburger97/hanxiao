@@ -25,7 +25,7 @@ class Header extends Component {
         return (
             <Collapse open={this.state.collapse}>
                 <div className="p-3 mt-2 rounded">
-                    <span>Feel free to reach out!</span>
+                    {/* <span>Feel free to reach out!</span> */}
 
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.linkedin.com/in/hanburger/" target="_blank">
                         <FontAwesomeIcon icon={faLinkedin} color='grey' />
@@ -62,7 +62,7 @@ class Header extends Component {
                             <h1>Han Xiao</h1>
                             <br />
                             <p>
-                                Aspriring software engineer interested in cloud development, computer networks and distributed computing.    
+                                Software engineer passionate about distributed systems and databases.    
                             </p>  
                             
                             <Button pill className={Style.Button} href="https://github.com/hanburger97">
