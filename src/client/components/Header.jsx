@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import { Collapse } from "shards-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faMedium, faGoodreads } from '@fortawesome/free-brands-svg-icons';
@@ -8,6 +8,7 @@ import { faEnvelope, faFile } from '@fortawesome/fontawesome-free-solid';
 import HeaderStyle from '../styles/Header.less';
 
 import { Link } from './Common.jsx';
+import Palette from '../global.js';
 
 class Header extends Component {
     constructor(props) {
@@ -20,22 +21,22 @@ class Header extends Component {
                 <div>
                     
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://drive.google.com/file/d/1-r65YvF76GjrgQi4Lhljc9ru1foEjUaA/view?usp=sharing" target="_blank">
-                        <FontAwesomeIcon icon={faFile} color='grey' />
+                        <FontAwesomeIcon icon={faFile} color={Palette.primaryColor} />
                     </a>
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://github.com/hanburger97" target="_blank">
-                        <FontAwesomeIcon icon={faGithub} color='grey' />
+                        <FontAwesomeIcon icon={faGithub} color={Palette.primaryColor} />
                     </a>
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.linkedin.com/in/hanburger/" target="_blank">
-                        <FontAwesomeIcon icon={faLinkedin} color='grey' />
+                        <FontAwesomeIcon icon={faLinkedin} color={Palette.primaryColor} />
                     </a>
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://medium.com/@hanx.ca" target="_blank">
-                        <FontAwesomeIcon icon={faMedium} color='grey' />
+                        <FontAwesomeIcon icon={faMedium} color={Palette.primaryColor} />
                     </a>
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="mailto:yhxiao@uwaterloo.ca" target="_blank">
-                        <FontAwesomeIcon icon={faEnvelope} color='grey' />
+                        <FontAwesomeIcon icon={faEnvelope} color={Palette.primaryColor} />
                     </a>
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.goodreads.com/user/show/113736962-han-xiao" target="_blank">
-                        <FontAwesomeIcon icon={faGoodreads} color='#346354' />
+                        <FontAwesomeIcon icon={faGoodreads} color={Palette.primaryColor} />
                     </a>
 
                 </div>
@@ -49,12 +50,11 @@ class Header extends Component {
                     
                 <Col md={{span: 4, offset: 2}} sm={12} className="container">
                 <div className={HeaderStyle.headerContent}>
-                    {/* <img src="public/favicon.png" style={{"height": "10vh", "width": "auto", "paddingBottom": "10px"}}/> */}
-                    <br/>
-                    <br/>
+                    <img src="public/img/h.png" style={{"height": "5rem", "width": "auto", float: "left", "padding-right": "1.3rem"}}/>
                     <h1>Han Xiao</h1>
                     
                     <h5>software engineer & pilot </h5>                            
+                    <br/>
                     <p>
                         Third-year software engineering student at the <Link href="https://uwaterloo.ca/" target="_blank">University of Waterloo, </Link>
                         passionate about distributed systems, SRE and databases and  

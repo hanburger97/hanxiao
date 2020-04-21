@@ -5,7 +5,7 @@ export const Link = styled.a`
   color: ${palette.primaryColor};
   font-weight: 500;
   &: hover{
-    color: #346354;
+    color: ${palette.primaryColorLight};
     font-weight: 500;
   }
 `;
