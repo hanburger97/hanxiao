@@ -1,6 +1,7 @@
 const palette = { 
-  primaryColor: "#346354",
+  primaryColor: "#164738",
   primaryColorLight: "#346354",
-  secondaryColor: ""
+  secondaryColor: "",
+  lightGrey: "#4A4A4A"
 }
 export default palette;
