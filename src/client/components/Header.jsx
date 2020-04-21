@@ -1,26 +1,19 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { Button, Collapse } from "shards-react";
+import { Collapse } from "shards-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faFacebook, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faFile, faCertificate } from '@fortawesome/fontawesome-free-solid';
-import { Canvas } from 'react-three-fiber';
+import { faLinkedin, faGithub, faMedium, faGoodreads } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faFile } from '@fortawesome/fontawesome-free-solid';
 
-import Scene from './Scene.jsx';
-
-import Style from '../styles/Main.less';
 import HeaderStyle from '../styles/Header.less';
+
+import { Link } from './Common.jsx';
 
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = { collapse: true };
     }
-
-    toggle = () => {
-        this.setState({ collapse: !this.state.collapse });
-    }
-
     getContactMethods() {
         return (
             <Collapse open={this.state.collapse}>
@@ -35,11 +28,14 @@ class Header extends Component {
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.linkedin.com/in/hanburger/" target="_blank">
                         <FontAwesomeIcon icon={faLinkedin} color='grey' />
                     </a>
-                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://medium.com/@hanburger97" target="_blank">
+                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://medium.com/@hanx.ca" target="_blank">
                         <FontAwesomeIcon icon={faMedium} color='grey' />
                     </a>
                     <a className="twitter mx-3 h4 d-inline-block text-secondary" href="mailto:yhxiao@uwaterloo.ca" target="_blank">
                         <FontAwesomeIcon icon={faEnvelope} color='grey' />
+                    </a>
+                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.goodreads.com/user/show/113736962-han-xiao" target="_blank">
+                        <FontAwesomeIcon icon={faGoodreads} color='#346354' />
                     </a>
 
                 </div>
@@ -50,45 +46,41 @@ class Header extends Component {
     render() {
         return (
             <div className={HeaderStyle.header}>
-                    <Row>
-                        <Col md={6} >
-                        <div className={HeaderStyle.headerContent}>
-                            {/* <img src="public/favicon.png" style={{"height": "10vh", "width": "auto", "paddingBottom": "10px"}}/> */}
-                            <br/>
-                            <br/>
-                            <h1>Han Xiao</h1>
-                            
-                            <h5>software engineer & pilot </h5>
-                            <hr />
-                            
-                            <p>
-                                I am a third-year software engineering student at the <strong>University of Waterloo</strong> in Canada 🇨🇦.
-                                I am passionate about back-end software and I have a particular interest in distributed systems and database
-                                implementations. I am looking for impactful internships in fast growing companies.
+                    
+                <Col md={{span: 4, offset: 2}} sm={12} className="container">
+                <div className={HeaderStyle.headerContent}>
+                    {/* <img src="public/favicon.png" style={{"height": "10vh", "width": "auto", "paddingBottom": "10px"}}/> */}
+                    <br/>
+                    <br/>
+                    <h1>Han Xiao</h1>
+                    
+                    <h5>software engineer & pilot </h5>                            
+                    <p>
+                        Third-year software engineering student at the <Link href="https://uwaterloo.ca/" target="_blank">University of Waterloo, </Link>
+                        passionate about distributed systems, SRE and databases and  
+                        looking for impactful internships in fast growing companies.
 
 
-                            </p> 
-                            <p>
-                                During my past internships at <strong>Shopify</strong>, an e-commerce platform, I've worked on prototyping a new proxy server for sharded
-                                MySQL instances and made key contributions in the "Buy online, pickup in-store" feature.
-                                I have also interned at <strong>North inc.</strong>, a Canadian start-up making smart glasses, where I worked in cloud-based authentications.
-                            </p>
-                            <p>
-                                In my free time, I enjoy playing volleyball, the piano and flying. I am a fully licensed private and glider pilot since the age
-                                of 16, feel free to reach out to me if you want to come fly with me! 🛫 
-                            </p>
-                            {this.getContactMethods()}
-                            
-                            
-                        </div>
-                        </Col>
-                        <Col md={6}>
-                            <img src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1580508229/IMG_0362.jpg" className={HeaderStyle.heroImg} />
-                        </Col>
-                        
-                    </Row>
+                    </p> 
+                    <p>
+                        Previous experience includes production engineering and back-end at <Link href="https://www.shopify.ca/" target="_blank">Shopify</Link>, cloud back-end at <Link href="https://www.bynorth.com/" target="_blank">North </Link>(Thalmic Labs) and data engineering at Intact Insurance's data lab.
+                    </p>
+                    <p>
+                        I am a pilot and aviation lover. I am always seeking new adventures in travelling, in meeting new people and in trying new experiences. In my free time you can find
+                        me <Link href="https://www.goodreads.com/user/show/113736962-han-xiao" target="_blank">reading </Link> and  <Link href="https://medium.com/@hanx.ca" target="_blank">writing</Link>.
+                    </p>
+                    {this.getContactMethods()}
+                    
+                    
+                </div>
+                </Col>
+                <Col md={2} sm={12}>
 
-                {/* <div className={HeaderStyle.diagonal}></div> */}
+
+                </Col>
+                   
+                 
+
             </div>
         )
     }
