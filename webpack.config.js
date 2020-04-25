@@ -26,10 +26,10 @@ module.exports = {
                     },
                 ],
             },
-            {
-                test: /\.svg$/,
-                use: ['@svgr/webpack'],
-            },
+            // {
+            //     test: /\.svg$/,
+            //     use: ['@svgr/webpack'],
+            // },
             {
                 test: /\.scss$/,
                 use: [
@@ -39,10 +39,11 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|png)$/,
+                test: /\.(jpg|png|svg)$/,
                 use: [
-                    'url-loader?limit=10000',
-                    'img-loader'
+                    // 'url-loader?limit=10000',
+                    'img-loader',
+                    'file-loader?name=/public/img/[name].[ext]'
                 ]
             },
             {

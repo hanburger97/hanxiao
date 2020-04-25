@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { Collapse } from "shards-react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faMedium, faGoodreads, faAutoprefixer } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFile } from '@fortawesome/fontawesome-free-solid';
@@ -11,36 +10,31 @@ import { Link } from './Common.jsx';
 import Palette from '../global.js';
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { collapse: true };
-    }
+
     getContactMethods() {
         return (
-            <Collapse open={this.state.collapse}>
-                <div>
-                    
-                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://drive.google.com/file/d/1-r65YvF76GjrgQi4Lhljc9ru1foEjUaA/view?usp=sharing" target="_blank">
-                        <FontAwesomeIcon icon={faFile} color={Palette.lightGrey} />
-                    </a>
-                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://github.com/hanburger97" target="_blank">
-                        <FontAwesomeIcon icon={faGithub} color={Palette.lightGrey} />
-                    </a>
-                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.linkedin.com/in/hanburger/" target="_blank">
-                        <FontAwesomeIcon icon={faLinkedin} color={Palette.lightGrey} />
-                    </a>
-                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://medium.com/@hanx.ca" target="_blank">
-                        <FontAwesomeIcon icon={faMedium} color={Palette.lightGrey} />
-                    </a>
-                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="mailto:yhxiao@uwaterloo.ca" target="_blank">
-                        <FontAwesomeIcon icon={faEnvelope} color={Palette.lightGrey} />
-                    </a>
-                    <a className="twitter mx-3 h4 d-inline-block text-secondary" href="https://www.goodreads.com/user/show/113736962-han-xiao" target="_blank">
-                        <FontAwesomeIcon icon={faGoodreads} color={Palette.lightGrey} />
-                    </a>
+            <div>
+                
+                <a className="mx-2 h5 d-inline-block" href="https://drive.google.com/file/d/1-r65YvF76GjrgQi4Lhljc9ru1foEjUaA/view?usp=sharing" target="_blank">
+                    <FontAwesomeIcon icon={faFile} color={Palette.lightGrey} />
+                </a>
+                <a className="mx-2 h5 d-inline-block" href="https://github.com/hanburger97" target="_blank">
+                    <FontAwesomeIcon icon={faGithub} color={Palette.lightGrey} />
+                </a>
+                <a className="mx-2 h5 d-inline-block" href="https://www.linkedin.com/in/hanburger/" target="_blank">
+                    <FontAwesomeIcon icon={faLinkedin} color={Palette.lightGrey} />
+                </a>
+                <a className="mx-2 h5 d-inline-block" href="https://medium.com/@hanx.ca" target="_blank">
+                    <FontAwesomeIcon icon={faMedium} color={Palette.lightGrey} />
+                </a>
+                <a className="mx-2 h5 d-inline-block" href="mailto:yhxiao@uwaterloo.ca" target="_blank">
+                    <FontAwesomeIcon icon={faEnvelope} color={Palette.lightGrey} />
+                </a>
+                <a className="mx-2 h5 d-inline-block" href="https://www.goodreads.com/user/show/113736962-han-xiao" target="_blank">
+                    <FontAwesomeIcon icon={faGoodreads} color={Palette.lightGrey} />
+                </a>
 
-                </div>
-            </Collapse>
+            </div>
         )
     }
 
@@ -50,7 +44,6 @@ class Header extends Component {
                <Row>
                 <Col md={{span: 5, offset: 1}} sm={12} className="container">
                     <div className={HeaderStyle.headerContent}>
-                        <img src="public/img/h.png" style={{"height": "4.8rem", "width": "auto", float: "left", "padding-right": "1.3rem"}}/>
                         <h1>Han Xiao</h1>
                         
                         <h5>software engineer & pilot </h5>                            
@@ -74,10 +67,10 @@ class Header extends Component {
                 </Col>
                 <Col md={6} sm={12}>
 
-                    <img src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1580508229/IMG_0362.jpg" style={{height: "15rem", width: "auto", left: "5rem", top: "13rem", position:"absolute", zIndex: 3, boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.4)"}} />
-                    <img src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1587573769/italy.jpg" style={{height: "10rem", width: "auto", left: "12rem", top: "9rem", position:"absolute", zIndex: 1, boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.4)"}} />
-                    <img src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1587573344/IMG_0642.jpg" style={{height: "17rem", width: "auto", left: "16rem", top: "16rem", position:"absolute", zIndex: 2, boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.4)"}} />
-                    <img src="public/img/world.svg" style={{height: "30rem", width: "auto", zIndex: 0, left: "0rem", top: "4rem",position: "absolute"}}/>
+                    <img src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1580508229/IMG_0362.jpg" style={{height: "13rem", width: "auto", left: "7rem", top: "13rem", position:"absolute", zIndex: 3, boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.4)"}} />
+                    <img src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1587852545/italy.jpg" style={{height: "10rem", width: "auto", left: "12rem", top: "7rem", position:"absolute", zIndex: 1, boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.4)"}} />
+                    <img src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1587573344/IMG_0642.jpg" style={{height: "15rem", width: "auto", left: "16rem", top: "16rem", position:"absolute", zIndex: 2, boxShadow: "10px 10px 5px rgba(0, 0, 0, 0.4)"}} />
+                    <img src="https://res.cloudinary.com/dhrmym6ox/image/upload/v1587575787/world.svg" style={{height: "30rem", width: "auto", zIndex: 0, left: "0rem", top: "4rem",position: "absolute"}}/>
                 </Col>
             </Row>     
                    

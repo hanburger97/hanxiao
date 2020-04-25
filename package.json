@@ -6,6 +6,7 @@
   "scripts": {
     "client": "webpack-dev-server --mode development --devtool inline-source-map --hot --display-error-details",
     "build": "webpack --mode production",
+    "deploy": "firebase deploy",
     "start:dev": "npm run client"
   },
   "author": "",
@@ -23,6 +24,7 @@
     "css-loader": "^2.1.1",
     "eslint": "^5.9.0",
     "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^5.1.0",
     "html-loader": "~0.5.5",
     "html-webpack-plugin": "~3.2.0",
     "less": "~3.9.0",
@@ -49,7 +51,6 @@
     "body-parser": "~1.18.3",
     "bootstrap": "^4.3.1",
     "browser-cookies": "^1.2.0",
-    "file-loader": "^5.0.2",
     "google-auth-library": "~3.1.0",
     "img-loader": "^3.0.1",
     "jwt-decode": "~2.2.0",
