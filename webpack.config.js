@@ -1,6 +1,5 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const data = require('./config/data.json');
 
 module.exports = {
     entry: ['babel-polyfill','./src/client/index.js'],
@@ -26,10 +25,6 @@ module.exports = {
                     },
                 ],
             },
-            // {
-            //     test: /\.svg$/,
-            //     use: ['@svgr/webpack'],
-            // },
             {
                 test: /\.scss$/,
                 use: [
@@ -72,11 +67,14 @@ module.exports = {
     },
     devServer: {
         port: 8030,
-        open: true,
-        compress: true
-    },
-    externals: {
-        'data': JSON.stringify(data)
+        compress: true,
+        proxy: {
+            "/airtable": {
+                target: "http://localhost:5000/myfirstproject-13ebe/us-central1",
+                secure: false,
+                changeOrigin: true
+            }
+        }
     },
     plugins: [
         new HtmlWebPackPlugin({

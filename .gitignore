@@ -1,6 +1,7 @@
 .vscode/
 .firebase/
 .firebaserc
+.runtimeconfig.json
 node_modules/
 dist/
 config/data.json
