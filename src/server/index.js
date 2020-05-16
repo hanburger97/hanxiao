@@ -1,5 +1,5 @@
 const functions = require('firebase-functions');
 
-const airtableProxy = require('./airtable_proxy');
+const proxy = require('./airtable_proxy');
 
-exports.airtable = functions.https.onRequest(airtableProxy);
+exports.api = functions.https.onRequest(proxy);

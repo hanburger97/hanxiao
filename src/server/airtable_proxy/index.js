@@ -26,7 +26,7 @@ proxy.use(cors({ origin: true }));
 proxy.use(bodyParser.urlencoded({ extended: false }));
 proxy.use(bodyParser.json());
 
-proxy.get('/', (req, res) => {
+proxy.get('/airtable', (req, res) => {
   const query = req.body.query;
   return fetch(query)
   .then(records => {
@@ -36,6 +36,10 @@ proxy.get('/', (req, res) => {
     console.log(err);
     return res.status(500).send(err);
   })
+});
+
+proxy.get('/healthcheck', (req, res) => {
+  return res.sendStatus(200);
 });
 
 module.exports = proxy;

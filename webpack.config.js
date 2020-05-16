@@ -69,7 +69,7 @@ module.exports = {
         port: 8030,
         compress: true,
         proxy: {
-            "/airtable": {
+            "/api": {
                 target: "http://localhost:5000/myfirstproject-13ebe/us-central1",
                 secure: false,
                 changeOrigin: true
