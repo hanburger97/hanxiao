@@ -69,7 +69,7 @@ module.exports = {
         port: 8030,
         compress: true,
         proxy: {
-            "/api": {
+            "/proxy": {
                 target: "http://localhost:5000/myfirstproject-13ebe/us-central1",
                 secure: false,
                 changeOrigin: true

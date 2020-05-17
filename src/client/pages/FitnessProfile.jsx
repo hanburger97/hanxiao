@@ -13,12 +13,9 @@ class FitnessProfilePage extends Component {
         return (
           <AirtableConsumer>
             {({fetch}) => (
-              <div>
-                <h1>
-                  Hello
-                </h1>
+              <>
                 <Summary fetch={fetch} />
-              </div>
+              </>
             )}
           </AirtableConsumer>
         )

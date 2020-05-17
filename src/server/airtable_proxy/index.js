@@ -33,13 +33,13 @@ proxy.get('/airtable', (req, res) => {
     return res.status(200).send(records);
   })
   .catch(err => {
-    console.log(err);
+    console.error(err);
     return res.status(500).send(err);
   })
 });
 
 proxy.get('/healthcheck', (req, res) => {
-  return res.sendStatus(200);
+  return res.status(200).send("pong");
 });
 
 module.exports = proxy;

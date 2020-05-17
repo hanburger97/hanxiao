@@ -2,6 +2,8 @@ const palette = {
   primaryColor: "#164738",
   primaryColorLight: "#346354",
   secondaryColor: "",
-  lightGrey: "#4A4A4A"
+  lightGrey: "#4A4A4A",
+  midnight_green: "#004953"
+
 }
 export default palette;

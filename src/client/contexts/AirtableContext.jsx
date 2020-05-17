@@ -18,12 +18,16 @@ class AirtableContext extends Component {
   fetch(query){
     return axios({
       method: 'get',
-      url: '/api/airtable',
+      url: 'https://us-central1-myfirstproject-13ebe.cloudfunctions.net/proxy/airtable',
+      //url: "/proxy/airtable",
       data: query
+    })
+    .then(res => {
+      return res.data;
     })
     .catch(err => {
       console.error(err);
-      return [err];
+      return err;
     });
   }
 
