@@ -18,7 +18,7 @@ class App extends Component {
                 <AirtableContext>
                     <Switch>
                         <Route path='/motivation' component={MotivationPage} />
-                        <Route path="/fitness-profile" component={FitnessProfilePage}/> 
+                        <Route path="/wellness" component={FitnessProfilePage}/> 
                         <Route path='/' component={HomePage} />
                     </Switch>
                 </AirtableContext>

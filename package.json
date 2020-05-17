@@ -53,6 +53,7 @@
     "@nivo/calendar": "^0.61.1",
     "@nivo/line": "^0.61.1",
     "@nivo/pie": "^0.61.1",
+    "@nivo/radar": "^0.61.1",
     "@shopify/polaris": "^4.2.1",
     "airtable": "^0.8.1",
     "axios": "^0.18.1",

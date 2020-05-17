@@ -1,30 +1,25 @@
 import React, { Component } from 'react';
 
 import { ResponsiveCalendar } from '@nivo/calendar';
-import { ResponsivePie } from '@nivo/pie'
+import { ResponsivePie } from '@nivo/pie';
+import { ResponsiveRadar } from '@nivo/radar';
 import palette  from '../../global.js';
 
 export const FitnessCalendar = (props) => {
   let now = new Date();
-  // let lastYear = new Date();
-  // lastYear.setYear(now.getFullYear() -1);
-  // now.setDate(now.getDate() - 1);
-
   let toDate = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()}`
-  let fromDate = `${now.getFullYear()}-03-18`
-  // let fromDate = `${lastYear.getFullYear()}-${lastYear.getMonth()}-${lastYear.getDate()}`
-  console.log(fromDate, toDate)
-  
+  let fromDate = `${now.getFullYear()}-03-18`  
   
   return (
     <ResponsiveCalendar
         data={props.data}
         from={fromDate}
         to={toDate}
-        emptyColor="#36454f"
-        colors={[ '#857750', "#b89733" ,'#ad8200']}
+        emptyColor="#426266"
+        colors={[ '#7ca7de', "#3d91ff" ,'#006eff']}
         margin={{ top: 0, right: 0, bottom: 10, left: 0 }}
         monthBorderColor={palette.midnight_green}
+        monthLegendColor="#fff"
         dayBorderWidth={4}
         granularity="month"
         dayBorderColor={palette.midnight_green}
@@ -32,6 +27,7 @@ export const FitnessCalendar = (props) => {
             {
                 anchor: 'bottom',
                 direction: 'row',
+                color: "#fff",
                 translateY: 16,
                 itemCount: 3,
                 itemWidth: 30,
@@ -50,7 +46,7 @@ export const PieChart = (props) =>{
     <ResponsivePie
         data={props.data}
         
-        margin={{ top: 40, right: 0, bottom: 40, left: 20 }}
+        margin={{ top: 20, right: 0, bottom: 40, left: 20 }}
         innerRadius={0.5}
         padAngle={0.7}
         cornerRadius={3}
@@ -78,6 +74,68 @@ export const PieChart = (props) =>{
                         on: 'hover',
                         style: {
                             itemTextColor: '#000'
+                        }
+                    }
+                ]
+            }
+        ]}
+    />
+  )
+}
+
+export const RadarChart = (props) => {
+
+  return (
+    <ResponsiveRadar
+        data={props.data}
+        keys={props.keys}
+        indexBy="exercise"
+        maxValue="auto"
+        margin={{ top: 70, right: 90, bottom: 40, left: 90 }}
+        curve="linearClosed"
+        borderWidth={5}
+        borderColor={{ theme: 'background' }}
+        gridLevels={4}
+        gridShape="circular"
+        gridLabelOffset={23}
+        enableDots={true}
+        dotSize={10}
+        enableDotLabel={false}
+        dotColor={palette.midnight_green}
+        dotBorderWidth={2}
+        dotBorderColor={{ from: 'color' }}
+        colors={{ scheme: 'blues' }}
+        fillOpacity={0.5}
+        blendMode="normal"
+        animate={true}
+        motionStiffness={25}
+        motionDamping={15}
+        isInteractive={true}
+        theme={{
+          axis: {
+            ticks: {
+              text: {
+                fill: "#fff"
+              }
+            }
+          }
+        }}
+        legends={[
+            {
+                anchor: 'top-left',
+                direction: 'column',
+                translateX: -50,
+                translateY: 40,
+                itemWidth: 80,
+                itemHeight: 20,
+                itemTextColor: '#fff',
+                symbolSize: 12,
+                symbolShape: 'circle',
+                effects: [
+                    {
+                        on: 'hover',
+                        style: {
+                            itemTextColor: '#fff'
                         }
                     }
                 ]
