@@ -60,6 +60,9 @@ class Header extends Component {
                             I am a pilot and an aviation lover. I am always seeking new adventures and thrills in travelling around the world, in meeting new people and in trying new experiences. In my free time, I love to 
                              <Link href="https://www.goodreads.com/user/show/113736962-han-xiao" target="_blank"> read </Link> and  <Link href="https://medium.com/@hanx.ca" target="_blank">write.</Link> I also enjoy snowboarding, volleyball and rugby. 
                         </p>
+                        <p>
+                            I have recently created a live <Link href="/#/wellness">dashboard</Link> to keep track of my health and wellness profile during the COVID-19 quarantine.
+                        </p>
                         {this.getContactMethods()}
                         
                         

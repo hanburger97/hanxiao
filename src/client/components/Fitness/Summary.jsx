@@ -85,7 +85,7 @@ class Summary extends Component {
   render() {
     return (
       <Container color={palette.midnight_green}>
-            <h3>Quick stats since quarantine</h3> <br/>
+            <h2>Overview</h2> <br/>
         <Row>
           <Col md={{span: 2, offset: 3}} >
             <h4>{this.totalPushups()}</h4>
@@ -102,9 +102,9 @@ class Summary extends Component {
           </Col>
         </Row>
         <br/><br/>
-        <Row>
-          <Col md={{span: 8, offset: 2}} >
-          <h3>Exercise calendar</h3>
+        <Row >
+          <Col md={{span: 10, offset: 1}}>
+          <h3>Activity calendar</h3>
           <p>This activity calendar shows the number of exercises/activities done during a given day.
             A single activity is defined as a single exercise such as push-ups. A run is considered a single activity, therefore
             this calendar does not take into account intensity per workout per day.
@@ -116,8 +116,8 @@ class Summary extends Component {
         </Row>
         <br/><br/>
         <Row>
-          <Col md={{span: 4, offset: 2}}>
-            <h3>Breakdown of activity targets</h3>
+          <Col md={{span: 5, offset: 1}} style={{textAlign: "right"}}>
+            <h3 style={{textAlign: "right"}}>Breakdown of activity targets</h3>
             <br/>
             <p>
               This is a breakdown per frequency of activies targeting each specific goal. In other words, each activity or exercise is mapped
@@ -131,14 +131,14 @@ class Summary extends Component {
             </div>
           </Col>
           
-          <Col md={4}>
-            <div  style={{height: "35vh"}}>
+          <Col md={5}>
+            <div  style={{height: "40vh"}}>
 
-            <PieChart data={this.formatPieChartData("Target")}  style={{height: "35vh"}}  />
+            <PieChart data={this.formatPieChartData("Target")}  style={{height: "40vh"}}  />
             </div>
             <br/> <br/> <br/> <br/> <br/> 
 
-            <h3>A look at the top 5 body-weights activities</h3>
+            <h3 style={{textAlign: "left"}}>A look at the top 5 body-weights activities</h3>
             <p>
               Given the top 5 most frequent body-weights exercises, this breakdown consists of their frequencies in terms of training days and their
               average number of repetitions in hundreds (100). To compute the average number of repitions, we have taken the total number of reps over the 

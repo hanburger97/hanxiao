@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { ResponsiveCalendar } from '@nivo/calendar';
 import { ResponsivePie } from '@nivo/pie';
 import { ResponsiveRadar } from '@nivo/radar';
+import { ResponsiveLine } from '@nivo/line'
+
 import palette  from '../../global.js';
 
 export const FitnessCalendar = (props) => {
@@ -59,26 +61,26 @@ export const PieChart = (props) =>{
         animate={true}
         motionStiffness={90}
         motionDamping={15}
-        legends={[
-            {
-                anchor: 'bottom',
-                direction: 'row',
-                translateY: 30,
-                itemWidth: 100,
-                itemHeight: 18,
-                itemTextColor: '#fff',
-                symbolSize: 18,
-                symbolShape: 'circle',
-                effects: [
-                    {
-                        on: 'hover',
-                        style: {
-                            itemTextColor: '#000'
-                        }
-                    }
-                ]
-            }
-        ]}
+        // legends={[
+        //     {
+        //         anchor: 'bottom',
+        //         direction: 'row',
+        //         translateY: 30,
+        //         itemWidth: 100,
+        //         itemHeight: 18,
+        //         itemTextColor: '#fff',
+        //         symbolSize: 18,
+        //         symbolShape: 'circle',
+        //         effects: [
+        //             {
+        //                 on: 'hover',
+        //                 style: {
+        //                     itemTextColor: '#000'
+        //                 }
+        //             }
+        //         ]
+        //     }
+        // ]}
     />
   )
 }
@@ -136,6 +138,80 @@ export const RadarChart = (props) => {
                         on: 'hover',
                         style: {
                             itemTextColor: '#fff'
+                        }
+                    }
+                ]
+            }
+        ]}
+    />
+  )
+}
+
+export const LineChart = (props) => {
+  return (
+    <ResponsiveLine
+        data={props.data}
+        margin={{ top: 70, right: 110, bottom: 70, left: 70 }}
+        xScale={{
+          type: "point"
+        }}
+        yScale={{ type: 'linear', min: 0, max: 20, stacked: true, reverse: false }}
+        curve="natural"
+        axisLeft={{
+            orient: 'left',
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: 'pace (min/km) / distance (km)',
+            legendOffset: -40,
+            legendPosition: 'middle',
+            textColor: '#fff',
+        }}
+        pointSize={10}
+        pointColor={{ theme: 'background' }}
+        pointBorderWidth={4}
+        pointBorderColor={{ from: 'serieColor' }}
+        pointLabel="y"
+        pointLabelYOffset={-12}
+        theme={{
+          axis: {
+            ticks: {
+              text: {
+                fill: "#fff"
+              }
+            },
+            legend: {
+              text: {
+                fill: "#fff"
+              }
+            }
+          }
+        }}
+        enableArea={true}
+        areaOpacity={0.4}
+        useMesh={true}
+        legends={[
+            {
+                anchor: 'bottom-right',
+                direction: 'column',
+                justify: false,
+                translateX: 100,
+                translateY: 0,
+                itemsSpacing: 0,
+                itemDirection: 'left-to-right',
+                itemWidth: 80,
+                itemTextColor: '#fff',
+                itemHeight: 20,
+                itemOpacity: 0.75,
+                symbolSize: 12,
+                symbolShape: 'circle',
+                symbolBorderColor: 'rgba(0, 0, 0, .5)',
+                effects: [
+                    {
+                        on: 'hover',
+                        style: {
+                            itemBackground: 'rgba(0, 0, 0, .03)',
+                            itemOpacity: 1
                         }
                     }
                 ]

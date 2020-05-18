@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { Container } from '../components/Common.jsx';
 import { AirtableConsumer } from '../contexts/AirtableContext.jsx';
 import { Row, Col} from 'react-bootstrap';
-import { Badge } from "shards-react";
+import { Badge, Breadcrumb, BreadcrumbItem } from "shards-react";
 import palette from '../global.js';
 import axios from 'axios';
 
 import Summary from '../components/Fitness/Summary.jsx';
+import Running from '../components/Fitness/Running.jsx';
 
 class WellnessProfilePage extends Component {
     constructor(props) {
@@ -52,13 +53,14 @@ class WellnessProfilePage extends Component {
                     </p>
                     <Badge theme={this.state.live ? "success" : "danger"}>Live data</Badge>  Last fetched from Airtable API at {this.state.updatedAt.toString()}
                     <br/>
-                    Made by <strong>Han Xiao</strong> with @nivo library and airtable.
+                    Made by <strong>Han Xiao</strong> with @nivo library and personal data stored in airtable.
                   </Col>
                 </Row>
                 <br/>
 
                 </Container>
                 <Summary fetch={fetch} />
+                <Running fetch={fetch} />
               </>
             )}
           </AirtableConsumer>

@@ -14,9 +14,11 @@ export const Link = styled.a`
 
 export const Container = styled.div`
   width: 100%;
-  padding: 10rem;
+  padding: 5rem;
+  padding-top: 8rem;
   background-color: ${props => props.color};
   display: inline-block;
+  margin: 0rem;
   height: auto;
   h1, h2, h3, h4, h5{
     color: #fff;
