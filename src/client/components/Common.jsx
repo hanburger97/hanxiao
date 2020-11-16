@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import palette from '../global.js';
 
 export const Link = styled.a`
-  color: ${palette.primaryColor};
-  font-weight: 500;
+  color: ${palette.white};
+  font-weight: 700;
   &: hover{
     color: ${palette.primaryColorLight};
-    font-weight: 500;
+    font-weight: 700;
   }
 `;
 
@@ -22,10 +22,11 @@ export const Container = styled.div`
   height: auto;
   h1, h2, h3, h4, h5{
     color: #fff;
-    text-align: center;
+    text-align: left;
   };
   p {
     color: #fff;
     font-weight: 300;
   }
 `;
+

@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: ['babel-polyfill','./src/client/index.js'],
@@ -73,13 +74,18 @@ module.exports = {
                 target: "http://localhost:5000/myfirstproject-13ebe/us-central1",
                 secure: false,
                 changeOrigin: true
-            }
+            },
         }
     },
     plugins: [
         new HtmlWebPackPlugin({
             template: './public/index.html',
             favicon: './public/favicon.png',
+        }),
+        new CopyPlugin({
+        patterns: [
+            { from: "public", to: "public" },
+        ],
         }),
     ],
 };

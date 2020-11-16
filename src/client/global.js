@@ -5,7 +5,8 @@ const palette = {
   violentBlue: "#002b63",
   lightGrey: "#4A4A4A",
   midnight_green: "#004953",
-  forest_green : "#002b36"
+  forest_green : "#002b36",
+  white: "#ffffff"
 }
 
 export const groupBy = (items, key) => items.reduce(
