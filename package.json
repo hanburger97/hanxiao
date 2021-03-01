@@ -82,7 +82,7 @@
     "sass-loader": "^7.1.0",
     "shards-react": "^1.0.3",
     "styled-components": "^5.1.0",
-    "three": "^0.109.0",
+    "three": "^0.125.0",
     "url-loader": "^3.0.0"
   }
 }
